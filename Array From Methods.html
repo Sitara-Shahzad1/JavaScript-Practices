@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+
+  <h1> Array methods </h1>
+
+  <script>
+
+// ************    Array.from method 
+
+                          const str = "Sitara "
+                          const arr = Array.from(str);
+                          console.log(`Used Array from method ${arr}`); // Output : ['S','i','t','a','r','a'];
+
+
+// ************    Display Data with console table 
+
+                          const person ={
+
+                            name : "Sitara",
+                            age : 20,
+                            profession : "Front End Engineer"
+                          }
+
+                          console.log(`Table console is used below `)
+                          console.table(person);
+
+
+// ************    Empty an Array 
+
+                        let number = [1,2,3,4,5,6,7];
+                        console.log(`Array with number is : ${number}`);
+                        number.length = 0;
+                        console.log(`After using Empty array : [${number}]`);  // it will empty the number array 
+
+// ************    JSON.parse to convert a Json string into jS object 
+
+                        const jsonStr = '{"name": "John", "age" : 25 }';
+                        const convert = JSON.parse(jsonStr);
+                        console.log(convert);
+
+// ************    Map FUnction to transform elements into a new array 
+
+                      const num = [1,2,3,4,5,6];
+                      const doubled = num.map( nums => nums * 2);
+                      console.log(`Simple number array is : [${num}]`);
+                      console.log(`Double number array is : [${doubled}]`);
+
+
+// ************    Remove array dulicates 
+
+                      const arr1 = [1,2,3,5,6,6,4,2];
+                      const duplicate = [...new Set(arr1)];
+                      console.log(`Simple Array with Duplicates [${arr1}]`);
+                      console.log(`Removed Duplicate array:  [${duplicate}]`);
+
+                      
+// ************    Swap Values using Destructuring 
+
+                    let x = 7 , y = 9;
+                    console.log(`The value of x  before swaping is : ${x}`);
+                    console.log(`The value of  y before swaping is : ${y}`);
+                        [x,y] = [y,x] ;// Swap value of array 
+                    console.log(`The value of  x after swaping is : ${x}`);
+                    console.log(`The value of y  after swaping is : ${y}`);
+
+
+
+  </script>
+  
+</body>
+</html>

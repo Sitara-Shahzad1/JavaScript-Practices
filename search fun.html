@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Create a function that search any word </title>
+</head>
+<body>
+  Create a function that search any word 
+
+
+  <script>
+
+    let str = "Javascript is fun to learn ";
+
+    function findFun (){
+      if (str.includes("fun")) {
+        console.log(true)
+      } else {
+        return "False";
+      }
+    }
+
+    findFun();
+
+    //same with different 
+
+   
+function findFun() {
+  let stri = "Javascript is fun to learn";
+
+  if (stri.indexOf("fun") !== -1) {
+    console.log(true);
+  } else {
+    console.log(false);
+  }
+}
+
+findFun();
+  </script>
+</body>
+</html>

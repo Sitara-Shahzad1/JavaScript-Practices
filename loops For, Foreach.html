@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+  <button id="btn" >Click Me</button>
+
+  <script>
+    let arr = [1,2,3,4];
+    for (let i = 0; i < arr.length; i++) {
+      console.log(arr[i]);
+    }
+
+    // do same with for each 
+
+    arr.forEach(function (num) {
+      console.log(num);
+    })
+
+    // same in concise version 
+
+   let numwith=  arr.forEach( (num) => console.log(num));
+
+   // Find a number from an Arrau 
+
+   let array = [1,2,3,4,5,6,7];
+
+   function search ( array, num ){
+
+    for (let i = 0; i < array.length; i++) {
+      if (array[i] === num ){
+        console.log(`Element found : ${i}`);
+        return;
+      }
+    }
+    console.log("Element not  found");
+   }
+   search( array , 6);
+  </script>
+</body>
+</html>

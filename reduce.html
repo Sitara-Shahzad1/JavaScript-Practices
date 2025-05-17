@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=
+  , initial-scale=1.0">
+  <title> Use reduce to calculate the sum of all numbers </title>
+</head>
+<body>
+  Use reduce to calculate the sum of all numbers
+
+  <script>
+    let num = [1,2,3,4,5];
+    let finalArray = num.reduce( (a,b) => {
+      return a+b ;     
+    } ) 
+    console.log(finalArray)
+
+
+    //same with different method
+
+    let numbers = [1, 2, 3, 4, 5];
+let total = numbers.reduce((acc, curr) => acc + curr, 0);
+console.log(total); 
+
+  </script>
+</body>
+</html>

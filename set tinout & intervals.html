@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  
+
+Set Timeout and Intervals 
+
+<script>
+
+let alarm = () =>  console.log(`Get Up! It's morning Now `);
+
+
+let timerID = setTimeout(alarm , 2000 );
+console.log( ` Alarm Set  with timer Id : ${timerID}`);
+
+// clearTimeout(timerID);      // after this function won't execute. 
+
+
+// ********** SET Intervals
+
+let alarm1 = () =>  console.log(`Get Up! It's morning Now `);
+let intervalId = setInterval(alarm1 , 1000);
+setTimeout(() => clearInterval(intervalId),5000);
+ 
+</script>
+</body>
+</html>
