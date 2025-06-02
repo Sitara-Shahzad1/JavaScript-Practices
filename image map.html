@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Image Map Example</title>
+</head>
+<body>
+
+  <h2>Clickable Image Map</h2>
+
+  <img src="https://via.placeholder.com/500x300" usemap="#example-map" alt="Example Map" />
+
+  <map name="example-map">
+    <!-- Rectangular area -->
+    <area shape="rect" coords="34,44,270,200" href="https://example.com/rectangle" alt="Rectangle">
+
+    <!-- Circular area -->
+    <area shape="circle" coords="350,150,50" href="https://example.com/circle" alt="Circle">
+
+    <!-- Polygon area (triangle) -->
+    <area shape="poly" coords="400,250,450,300,350,300" href="https://example.com/triangle" alt="Triangle">
+  </map>
+
+</body>
+</html>

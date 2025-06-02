@@ -1,17 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Filter all even numbers from an array </title>
-</head>
-
-<body>
-  Filter all even numbers from an array\
-
-
-  <script>
 
     //  Using if else 
     // let array=[1,2,3,4,5,6,7,8];
@@ -62,7 +48,13 @@
       return num % 2 === 1 ; //if we write 0 instead of 1 it will return even numbers
     });
     console.log(newOdd);
-  </script>
-</body>
 
-</html>
+
+
+    // ======= from interview  filter num < 3
+
+    const numbers = [0,1,2,3,4,5]
+    let filtered = numbers.filter(nums => nums <3).map( num => num + 5);
+    console.log(filtered);
+    // let add = filtered.map(num => num + 5)
+    // console.log(add);
