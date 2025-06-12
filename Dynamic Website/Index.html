@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dynamic Website </title>
+  <style>
+    .container{
+     /* border: 2px solid black;
+     display: flex; */
+    }
+    .card{
+      display: flex;
+      align-items: center;
+     
+    }
+    .text{
+      h1{
+        font-size: 25px;
+      }
+    }
+
+   .image {
+    position: relative;
+   }
+    .capsule{
+     position: absolute;
+     bottom: 4px;
+     z-index: 10;
+  right: 5px;
+  background-color: black;
+  color: aliceblue;
+  padding: 3px;
+  border-radius: 3px;
+  font-size: 14px;
+
+    }
+  </style>
+</head>
+<body>
+  
+
+  <div class="container">
+    <div class="card">
+        <div class="image"> <img src="Harry .png" alt="">
+          <div class="capsule"> 31:22 </div>
+        </div>
+        <div class="text">
+        <h1> Installing VS Code & How Website Work | Sigma Web Development Course-Tutorial 1 </h1> 
+        <p>CodeWithHarry . 727K views . 2 months ago </p>
+      </div>
+    </div>
+     <div class="btn" onclick={newBtn} > <button> ADD New </button>  </div> 
+  </div>
+
+ <script src="script.js"></script>
+</body>
+</html>

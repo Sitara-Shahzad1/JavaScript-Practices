@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+ <script>
+  let animal = {
+  eats : true 
+}
+
+let rabbit = {
+  jumps : true 
+}
+
+rabbit.__proto__=animal;
+
+class BigAnimal {
+
+  constructor(name){
+
+    this.name = name ;
+    console.log('Object is created ');
+    
+  }
+  eat(){
+    console.log('Animal eats');
+  }
+
+  jumps (){
+    console.log('animal Jumps');
+    
+  }
+}
+
+// Extends will take all the properties of BigAnimal Class
+class Lion extends BigAnimal{
+  constructor(name){
+    super(name) // THis is used to extend construcotr of BigAnimal class
+    console.log('Constructor Created in Lion ');
+    
+
+  }
+}
+
+let a = new BigAnimal ('Bunny')
+console.log(a);
+
+let l = new Lion ("Khaa raha hu ")
+console.log(l);
+
+ </script>
+</body>
+</html>
