@@ -1,16 +1,7 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=
-  , initial-scale=1.0">
-  <title>Remove duplicates from index </title>
-</head>
-<body>
-  Remove duplicates from index
-using indexof() and filter()
 
-  <script>
+  // Remove duplicates from index using indexof() and filter()
+
+  
 // SImple IndexOF fun 
         let numbers = [10, 20, 30, 40, 50];
         let index = numbers.indexOf(30);
@@ -33,7 +24,3 @@ using indexof() and filter()
         let finalfindArray = [...new Set(newarray)];
 
         console.log(finalfindArray); 
-
-  </script>
-</body>
-</html>

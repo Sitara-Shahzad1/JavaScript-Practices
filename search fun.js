@@ -1,23 +1,12 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title> Create a function that search any word </title>
-</head>
-<body>
-  Create a function that search any word 
 
-
-  <script>
 
     let str = "Javascript is fun to learn ";
 
     function findFun (){
       if (str.includes("fun")) {
-        console.log(true)
+        return "true";
       } else {
-        return "False";
+        return "false";
       }
     }
 
@@ -37,6 +26,4 @@ function findFun() {
 }
 
 findFun();
-  </script>
-</body>
-</html>
+ 

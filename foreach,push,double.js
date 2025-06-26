@@ -1,17 +1,24 @@
 let arr = [1,2,3,4,5];
 let newArr = [];
-let forResult = arr.forEach( num => {
+ arr.forEach( num => {
  newArr.push( num * 2);
 }
  );
 console.log(newArr);
 
 
-let arr1 = [2,3,4,5,6,7];
-let result = arr.map(num => {
-  return num > 2  
-})
-console.log(result);
+let arr1 = [2, 3, 4, 5, 6, 7];
+let result = [];
+
+arr1.forEach(num => {
+  if (num > 2) {
+    result.push(num); // Only push numbers greater than 2
+  }
+ 
+});
+
+console.log(result); // Output: [3, 4, 5, 6, 7]
+
 
 
 let array = [1,2,3,4,56];

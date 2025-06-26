@@ -1,18 +1,3 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=
-  , initial-scale=1.0">
-  <title>Map to convert array of strings to uppercase</title>
-</head>
-
-<body>
-  Map to convert array of strings to uppercase
-
-
-  <script>
 
 // square of array 
         let arr = [1,2,3,4,5,6];
@@ -41,7 +26,3 @@
 
         console.log(finalArray);
 
-  </script>
-</body>
-
-</html>

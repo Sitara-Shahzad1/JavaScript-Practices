@@ -10,7 +10,7 @@ if(isNaN(a) || isNaN(b)){
 let sum = parseInt(a) + parseInt(b);
 
 try {
-  console.log(`The sum is ${sum*x} `);
+  console.log(`The sum is ${sum} `);
   
   
 } catch (error) {

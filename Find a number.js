@@ -1,17 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-  <button id="btn" >Click Me</button>
-
-  <script>
-  
-   // Find a number from an Arrau 
+// Find a number from an Arrau 
 
    let array = [1,2,3,4,5,6,7];
 
@@ -19,24 +6,22 @@
 
     for (let i = 0; i < array.length; i++) {
       if (array[i] === num ){
-        console.log(`Element found : ${i}`);
+        console.log(`Element found at index: ${i}`);
         return;
       }
     }
     console.log("Element not  found");
    }
-   search( array , 4);
+   search( array , 3);
 
 
    // Same thing with for each when we call return in for each it will skip current number
 let arr1 = [1,2,3,4,5,6,7,8]
    arr1.forEach(num => {
-    if(num === 3 ){
+    if(num === 5 ){
       return  ;
     }
     console.log(`visited: ${num} `);
   }
 )
-  </script>
-</body>
-</html>
+ 

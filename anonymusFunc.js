@@ -1,20 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-</head>
-<body>
-  
-  <script>
+ 
     let sum = function (num1 , num2 ){
       return num1 + num2 ;
     }
 
     let newSum = sum ;
     
-    // console.log(newSum(4,5)); // function call 
+    console.log(newSum(4,5)); // function call 
 
     //(4 + 5 ) + 6 
 
@@ -27,6 +18,3 @@
     
     console.log( sumThreeNumbers( 2,4,5, sum) );
     
-  </script>
-</body>
-</html>
