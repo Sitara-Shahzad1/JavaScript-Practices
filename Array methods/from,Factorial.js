@@ -14,5 +14,5 @@ console.log(fact); // [1, 2, 3, 4, 5]
 
 
 // Factorial using map fill from 
-let factorial = new Array(5).fill(0).map( (a,b) => b + 1 ).reduce((a,b) => a*b);
+let factorial = new Array(5).fill(0).map( (a,b) => b + 1 ).reduce ((a,b) => a*b);
 console.log(factorial);

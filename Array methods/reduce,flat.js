@@ -1,5 +1,5 @@
 let arr = [1,2,3,4,5,6];
-let reduced = arr.reduce((a,b) => a+b , 3 );
+let reduced = arr.reduce((a,b) => a+b , 5); //5 is the extra number which will add in rest
 console.log(reduced);
 
 
